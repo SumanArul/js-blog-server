@@ -34,6 +34,7 @@ exports.register = async (req, res) => {
             .status(500)
             .json({ error, message: "Internal Server Error" });
         }
+        
         return res.status(200).json({ message: "User registered successfully"});
 
           //res.status(200).json({ success: true, token,user,username });
